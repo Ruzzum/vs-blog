@@ -1,0 +1,20 @@
+﻿
+
+<div class="col-xs-12">
+    <div class="jumbotron">
+        <p>Seleccione una opción</p>
+        <button class="btn btn-default" onclick="Prueba()"><i class="fa fa-user"></i> Prueba</button>
+    </div>
+</div>
+
+@section ViewsJS
+{
+    <script>
+        var texto = 'Prueba de render section';
+
+        function Prueba() {
+            alert(texto);
+        }
+
+    </script>
+}
