@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="~/Content/img/note.ico" type="image/x-icon" />
     <title>Blog</title>
 
     <!--CSS-->
@@ -10,38 +11,40 @@
 
 </head>
 <body>
-
     <!--LOGO / OPCIONES-->
-    <header id="header">
-        <div class="col-xs-12">
-            <section class="col col-sm-4 prueba">
-                <img src="/Content/img/logo.png" alt="" />
-            </section>
-            <section class="col col-sm-8">
-                <ul class="nav nav-pills mt10 mb10">
-                    <li>
-                        <button class="btn btn-primary"><i class="fa fa-music"></i> Opcion 1</button>
-                    </li>
-                    <li>
-                        <button class="btn btn-primary"><i class="fa fa-headphones"></i> Opcion 2</button>
-                    </li>
-                    <li>
-                        <button class="btn btn-primary"><i class="fa fa-play"></i> Opcion 3</button>
-                    </li>
-                    <li>
-                        <button class="btn btn-primary"><i class="fa fa-male"></i> Opcion 4</button>
-                    </li>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/Home/Inicio">
+                        <section class="col col-sm-4 prueba">
+                            <img src="/Content/img/logo.png" alt="" class="Imagen" />
+                        </section>
+                    </a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink( linkText: "Discography", actionName: "AdmDiscografia", controllerName: "Discografia")</li>
+                    <li>@Html.ActionLink(linkText: "Lyrics", actionName: "AdmLyrics", controllerName: "Lyrics")</li>
+                    <li>@Html.ActionLink(linkText: "Reviews", actionName: "AdmReview", controllerName: "Review")</li>
+                    <li><a href="#">Videos</a></li>
+                    <li>@Html.ActionLink(linkText: "Administracion Blog", actionName: "AdmBlog", controllerName: "Admnistrador")</li>
                 </ul>
-            </section>
-        </div>
+                <ul class="nav navbar-nav navbar-right Ocultar">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>Mayo 2017</p>
-        </footer>
+        <div id="footer">
+            <div class="container">
+                <p class="text-muted credit">&copy;BlogMusical.com</p>
+            </div>
+        </div>
     </div>
 
     <!--JS-->
