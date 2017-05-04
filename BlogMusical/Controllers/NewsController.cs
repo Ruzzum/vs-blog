@@ -6,18 +6,19 @@ using System.Web.Mvc;
 
 namespace BlogMusical.Controllers
 {
-    public class ReviewController : Controller
+    public class NewsController : Controller
     {
         [HttpGet]
-        public ActionResult Viewer()
+        public ActionResult Index()
         {
             return View();
         }
 
         [HttpGet]
-        public ActionResult Admin()
+        public ActionResult UpdateNew()
         {
             return View();
         }
+
     }
 }

@@ -16,18 +16,18 @@
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/Home/Inicio">
+                    <a class="navbar-brand" href="/news/index">
                         <section class="col col-sm-4 prueba">
                             <img src="/Content/img/logo.png" alt="" class="Imagen" />
                         </section>
                     </a>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink( linkText: "Discography", actionName: "AdmDiscografia", controllerName: "Discografia")</li>
-                    <li>@Html.ActionLink(linkText: "Lyrics", actionName: "AdmLyrics", controllerName: "Lyrics")</li>
-                    <li>@Html.ActionLink(linkText: "Reviews", actionName: "AdmReview", controllerName: "Review")</li>
+                    <li>@Html.ActionLink(linkText: "Discography", actionName: "Viewer", controllerName: "Discography")</li>
+                    <li>@Html.ActionLink(linkText: "Lyrics", actionName: "Viewer", controllerName: "Lyrics")</li>
+                    <li>@Html.ActionLink(linkText: "Reviews", actionName: "Viewer", controllerName: "Review")</li>
                     <li><a href="#">Videos</a></li>
-                    <li>@Html.ActionLink(linkText: "Administracion Blog", actionName: "AdmBlog", controllerName: "Admnistrador")</li>
+                    @*<li>@Html.ActionLink(linkText: "Administracion Blog", actionName: "AdmBlog", controllerName: "Admnistrador")</li>*@
                 </ul>
                 <ul class="nav navbar-nav navbar-right Ocultar">
                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>

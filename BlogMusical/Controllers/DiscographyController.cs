@@ -6,13 +6,17 @@ using System.Web.Mvc;
 
 namespace BlogMusical.Controllers
 {
-    public class HomeController : Controller
+    public class DiscographyController : Controller
     {
         [HttpGet]
-        public ActionResult Inicio()
+        public ActionResult Viewer()
         {
-            ViewBag.hola = "";
+            return View();
+        }
 
+        [HttpGet]
+        public ActionResult Admin()
+        {
             return View();
         }
 

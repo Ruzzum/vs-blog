@@ -6,13 +6,20 @@ using System.Web.Mvc;
 
 namespace BlogMusical.Controllers
 {
-    public class DiscografiaController : Controller
+    public class AdminController : Controller
     {
         [HttpGet]
-        public ActionResult AdmDiscografia()
+        public ActionResult LogIn()
         {
             return View();
         }
+
+        [HttpGet]
+        public ActionResult Users()
+        {
+            return View();
+        }
+
 
     }
 }

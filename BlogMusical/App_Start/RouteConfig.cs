@@ -13,10 +13,12 @@ namespace BlogMusical
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.LowercaseUrls = true;
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Inicio", id = UrlParameter.Optional }
+                defaults: new { controller = "News", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

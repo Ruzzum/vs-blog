@@ -8,10 +8,17 @@ namespace BlogMusical.Controllers
 {
     public class LyricsController : Controller
     {
-         [HttpGet]
-        public ActionResult AdmLyrics()
+        [HttpGet]
+        public ActionResult Viewer()
         {
             return View();
         }
+
+        [HttpGet]
+        public ActionResult Admin()
+        {
+            return View();
+        }
+
     }
 }
