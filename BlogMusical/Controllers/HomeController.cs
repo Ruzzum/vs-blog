@@ -11,6 +11,8 @@ namespace BlogMusical.Controllers
         [HttpGet]
         public ActionResult Inicio()
         {
+            ViewBag.hola = "";
+
             return View();
         }
 
