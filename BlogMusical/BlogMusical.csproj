@@ -158,7 +158,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AdmnistradorController.cs" />
+    <Compile Include="Controllers\DiscografiaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LyricsController.cs" />
+    <Compile Include="Controllers\ReviewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -171,6 +175,7 @@
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\note.ico" />
     <Content Include="Content\js\blog-scripts.js" />
     <Content Include="favicon.ico" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
@@ -188,6 +193,7 @@
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\fonts\FontAwesome.otf" />
     <Content Include="Content\js\plugins\jquery-3.1.1.min.js" />
+    <Content Include="note.ico" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -206,10 +212,21 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+    <Content Include="Views\Discografia\AdmDiscografia.cshtml" />
+    <Content Include="Views\Lyrics\AdmLyrics.cshtml" />
+    <Content Include="Views\Review\AdmReview.cshtml" />
+    <Content Include="Views\Admnistrador\UpdateDiscography.cshtml" />
+    <Content Include="Views\Admnistrador\AdmBlog.cshtml" />
+    <Content Include="Views\Admnistrador\UpdateReview.cshtml" />
+    <Content Include="Views\Admnistrador\UpdateLyrics.cshtml" />
+    <Content Include="Views\Admnistrador\UpdateNews.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>note.ico</ApplicationIcon>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
