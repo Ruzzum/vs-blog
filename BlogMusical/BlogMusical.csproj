@@ -201,6 +201,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\News\Index.cshtml" />
+    <Content Include="_SQL\insert_paises.sql" />
+    <Content Include="_SQL\v0.1.sql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
